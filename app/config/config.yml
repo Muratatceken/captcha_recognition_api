@@ -1,0 +1,25 @@
+model:
+  path: "muratatceken/captcha-recognition"
+  
+processor:
+  name: "microsoft/trocr-small-printed" 
+
+server:
+  host: "0.0.0.0"
+  port: 8000                
+
+logging:
+  level: "info"                         # Logging level
+  format: "[%(asctime)s] %(levelname)s in %(module)s: %(message)s"
+  file: "logs/app.log"                  # Log file path
+
+preprocessing:
+  image_format: ["image/png", "image/jpeg"] # Allowed image formats
+  image_size: [224, 224]                # Resize image size before processing
+
+errors:
+  unsupported_file_type: "Unsupported file type."
+  internal_error: "An internal error occurred. Please try again."
+
+auth:
+  token: "f6c8c14c6a95cfb6351d6761d90d8d9c2c2e9b0b05c4f2a2f5b2c8f54035e704"
