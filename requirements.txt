@@ -1,11 +1,11 @@
-fastapi==0.103.0
+fastapi==0.112.2
 uvicorn==0.22.0
-transformers==4.33.0
-Pillow==9.4.0
-opencv-python==4.8.0.76
-numpy==1.26.0
-pyyaml==6.0
-torch==2.1.0
-sentencepiece
-protobuf
-python-multipart
+transformers==4.44.2
+Pillow==10.4.0
+opencv-python==4.10.0.84
+numpy==1.26.4
+pyyaml==6.0.1
+torch==2.4.0
+sentencepiece==0.2.0  # Specify version
+protobuf==4.25.3  # Specify version
+python-multipart==0.0.9  # Specify version
